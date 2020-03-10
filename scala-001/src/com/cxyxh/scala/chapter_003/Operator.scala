@@ -30,11 +30,11 @@ object Operator {
     var rng = true;
     var edg = false;
 
-    println("a && b = " + (rng && edg) );
+    println("a && b = " + (rng && edg));
 
-    println("a || b = " + (rng || edg) );
+    println("a || b = " + (rng || edg));
 
-    println("!(a && b) = " + !(rng && edg) );
+    println("!(a && b) = " + !(rng && edg));
 
     //位运算 ~ & | ^
   }
