@@ -1,5 +1,8 @@
 package com.cxyxh.scala.chapter_003
 
+/**
+  * 运算符，和Java的类似
+  */
 object Operator {
   def main(args: Array[String]): Unit = {
     //算术运算符+，-，*，/，%
