@@ -17,7 +17,7 @@ object TestString {
     println(str.length())
 
 
-
+    println(str.charAt(2))
 
   }
 
