@@ -1,5 +1,7 @@
 package com.cxyxh.scala.chapter_005
 
+import java.util.Date
+
 /**
   * 方法和函数，在scala中是分开的
   */
@@ -27,8 +29,7 @@ object MethodAndFunction {
     println(result2)
 
     println(f.getClass)
-//    println(m.getClass)
-
+    //    println(m.getClass)
 
 
     var x = method1("55", "66")
@@ -60,6 +61,47 @@ object MethodAndFunction {
     var result9 = obj.testMoren(55, 33.0)
     println(result9)
 
-  }
 
+    var result10 = obj.aplly(obj.testAdd, "嘎嘎", "嘎嘎")
+    println(result10)
+
+
+    println(obj.factorial(0))
+    println(obj.factorial(1))
+    println(obj.factorial(2))
+    println(obj.factorial(3))
+    println(obj.factorial(4))
+
+    println(obj.feiBo(1))
+    println(obj.feiBo(2))
+    println(obj.feiBo(3))
+    println(obj.feiBo(4))
+    println(obj.feiBo(5))
+    println(obj.feiBo(6))
+    println(obj.feiBo(7))
+    println(obj.feiBo(8))
+    println(obj.feiBo(9))
+    println(obj.feiBo(10))
+    println(obj.feiBo(11))
+    println(obj.feiBo(12))
+    println(obj.feiBo(13))
+    println(obj.feiBo(14))
+    println(obj.feiBo(15))
+    println(obj.feiBo(16))
+    println(obj.feiBo(17))
+    //到达100就会计算很久了
+//    println(obj.feiBo(100))
+
+    val date = new Date
+    //可以进行参数绑定，然后设置类似于占位符的_,之后调用就只需要传入占位符的内容了
+    val logWithDateBound = obj.log(date, _:String)
+
+    logWithDateBound("message1")
+    logWithDateBound("message2")
+    logWithDateBound("message3")
+
+    println(obj.testAdd2("mesage")("mesage2"))
+
+
+  }
 }
